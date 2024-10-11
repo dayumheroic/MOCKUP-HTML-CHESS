@@ -1,0 +1,39 @@
+{
+  "pages": [
+    {
+      "name": "About",
+      "icon": "ti-smart-home",
+      "url": "index.html"
+    },
+    {
+      "name": "Community",
+      "icon": "ti-smart-home",
+      "url": "index.html"
+    },
+    {
+      "name": "Education",
+      "icon": "ti-smart-home",
+      "url": "index.html"
+    },
+    {
+      "name": "Play",
+      "icon": "ti-smart-home",
+      "url": "index.html"
+    },
+    {
+      "name": "Ratings",
+      "icon": "ti-smart-home",
+      "url": "index.html"
+    },
+    {
+      "name": "Join",
+      "icon": "ti-smart-home",
+      "url": "index.html"
+    },
+    {
+      "name": "Give",
+      "icon": "ti-smart-home",
+      "url": "index.html"
+    }
+  ]
+}

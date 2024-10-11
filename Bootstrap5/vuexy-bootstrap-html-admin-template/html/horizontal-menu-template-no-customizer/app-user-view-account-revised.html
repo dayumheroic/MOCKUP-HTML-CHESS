@@ -1,0 +1,862 @@
+<!doctype html>
+
+<html
+  lang="en"
+  class="light-style layout-menu-fixed layout-compact"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../../assets/"
+  data-template="horizontal-menu-template-no-customizer-starter">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>User Profile| Mock-ClickThrough</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../../assets/img/logo-chess.svg" />
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&ampdisplay=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="../../assets/vendor/fonts/tabler-icons.css" />
+    <!-- <link rel="stylesheet" href="../../assets/vendor/fonts/fontawesome.css" /> -->
+    <!-- <link rel="stylesheet" href="../../assets/vendor/fonts/flag-icons.css" /> -->
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../../assets/vendor/css/rtl/core.css" />
+    <link rel="stylesheet" href="../../assets/vendor/css/rtl/theme-default.css" />
+    <link rel="stylesheet" href="../../assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../../assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="../../assets/vendor/libs/typeahead-js/typeahead.css" />
+    <link rel="stylesheet" href="../../assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css" />
+    <link rel="stylesheet" href="../../assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" />
+    <link rel="stylesheet" href="../../assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css" />
+    <link rel="stylesheet" href="../../assets/vendor/libs/animate-css/animate.css" />
+    <link rel="stylesheet" href="../../assets/vendor/libs/sweetalert2/sweetalert2.css" />
+    <link rel="stylesheet" href="../../assets/vendor/libs/select2/select2.css" />
+    <link rel="stylesheet" href="../../assets/vendor/libs/@form-validation/form-validation.css" />
+
+    <!-- Page CSS -->
+
+    <link rel="stylesheet" href="../../assets/vendor/css/pages/page-user-view.css" />
+
+
+    <!-- Helpers -->
+    <script src="../../assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../../assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-navbar-full layout-horizontal layout-without-menu">
+      <div class="layout-container">
+        <!-- Navbar -->
+
+        <nav class="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme" id="layout-navbar">
+          <div class="container-xxl">
+            <div class="navbar-brand app-brand demo d-none d-xl-flex py-0 me-4">
+              <a href="index.html" class="app-brand-link gap-2">
+                <span class="app-brand-logo">
+                    <svg width="100px" height="60px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 256 182" style="enable-background:new 0 0 256 182;" xml:space="preserve">
+               <style type="text/css">
+                   .st0{fill:#1592D1;}
+                   .st1{fill:#003F6C;}
+                   .st2{fill:#034C7A;}
+               </style>
+               <g>
+                   <path class="st0" d="M1.3,136.2V116h7.8v20c0,5.8,2.9,8.7,7.6,8.7s7.6-2.9,7.6-8.5V116h7.8v20c0,10.7-6,16-15.5,16
+                       S1.3,146.6,1.3,136.2"/>
+                   <path class="st0" d="M38.3,146.2l4.6-5.5c3.2,2.6,6.5,4.3,10.6,4.3c3.2,0,5.1-1.3,5.1-3.3v-0.1c0-2-1.2-3-7.1-4.5
+                       c-7.1-1.8-11.7-3.8-11.7-10.8v-0.1c0-6.4,5.2-10.7,12.4-10.7c5.2,0,9.6,1.6,13.1,4.5l-4,5.9c-3.1-2.2-6.2-3.5-9.2-3.5
+                       c-3,0-4.6,1.4-4.6,3.1v0.1c0,2.3,1.5,3.1,7.6,4.7c7.2,1.9,11.2,4.4,11.2,10.6v0.1c0,7-5.4,11-13,11C48,151.9,42.6,150,38.3,146.2"
+                       />
+                   <path class="st1" d="M83.7,133.8v-0.1c0-10.1,7.6-18.3,18.5-18.3c6.7,0,10.7,2.2,14,5.5l-5,5.7c-2.7-2.5-5.5-4-9-4
+                       c-6,0-10.3,5-10.3,11v0.1c0,6.1,4.2,11.1,10.3,11.1c4,0,6.5-1.6,9.3-4.1l5,5c-3.6,3.9-7.7,6.3-14.5,6.3
+                       C91.4,152,83.7,144,83.7,133.8"/>
+                   <polygon class="st1" points="122.9,116 130.6,116 130.6,130 145,130 145,116 152.8,116 152.8,151.4 145,151.4 145,137.2 
+                       130.6,137.2 130.6,151.4 122.9,151.4 	"/>
+                   <polygon class="st1" points="161.4,116 188.1,116 188.1,122.9 169.2,122.9 169.2,130.1 185.8,130.1 185.8,137 169.2,137 
+                       169.2,144.5 188.4,144.5 188.4,151.4 161.4,151.4 	"/>
+                   <path class="st1" d="M193.8,146.2l4.6-5.5c3.2,2.6,6.5,4.3,10.6,4.3c3.2,0,5.1-1.3,5.1-3.3v-0.1c0-2-1.2-3-7.1-4.5
+                       c-7.1-1.8-11.7-3.8-11.7-10.8v-0.1c0-6.4,5.2-10.7,12.4-10.7c5.2,0,9.6,1.6,13.1,4.5l-4,5.9c-3.1-2.2-6.2-3.5-9.2-3.5
+                       s-4.6,1.4-4.6,3.1v0.1c0,2.3,1.5,3.1,7.6,4.7c7.2,1.9,11.2,4.4,11.2,10.6v0.1c0,7-5.4,11-13,11C203.4,151.9,198,150,193.8,146.2"/>
+                   <path class="st1" d="M226.7,146.2l4.6-5.5c3.2,2.6,6.5,4.3,10.6,4.3c3.2,0,5.1-1.3,5.1-3.3v-0.1c0-2-1.2-3-7.1-4.5
+                       c-7.1-1.8-11.7-3.8-11.7-10.8v-0.1c0-6.4,5.2-10.7,12.4-10.7c5.2,0,9.6,1.6,13.1,4.5l-4,5.9c-3.1-2.2-6.2-3.5-9.2-3.5
+                       s-4.6,1.4-4.6,3.1v0.1c0,2.3,1.5,3.1,7.6,4.7c7.2,1.9,11.2,4.4,11.2,10.6v0.1c0,7-5.4,11-13,11C236.3,151.9,230.9,150,226.7,146.2"
+                       />
+                   <polygon class="st0" points="38.6,166.9 38.6,180.7 40.4,180.7 40.4,174.9 47.7,174.9 47.7,173.2 40.4,173.2 40.4,168.6 
+                       48.6,168.6 48.6,166.9 	"/>
+                   <polygon class="st0" points="56.8,166.9 56.8,180.7 67,180.7 67,179 58.6,179 58.6,174.6 66,174.6 66,172.9 58.6,172.9 58.6,168.6 
+                       66.9,168.6 66.9,166.9 	"/>
+                   <path class="st0" d="M80.2,179h-3v-10.4h3c3.2,0,5.4,2.1,5.4,5.2C85.6,176.9,83.4,179,80.2,179 M80.2,166.9h-4.8v13.8h4.8
+                       c4.2,0,7.3-2.9,7.3-6.9v0C87.5,169.8,84.4,166.9,80.2,166.9"/>
+                   <polygon class="st0" points="96.2,166.9 96.2,180.7 106.4,180.7 106.4,179 98.1,179 98.1,174.6 105.4,174.6 105.4,172.9 
+                       98.1,172.9 98.1,168.6 106.3,168.6 106.3,166.9 	"/>
+                   <path class="st0" d="M116.6,168.6h4c2.1,0,3.3,0.9,3.3,2.5v0c0,1.6-1.3,2.6-3.3,2.6h-4V168.6z M125.7,171.1L125.7,171.1
+                       c0-1.1-0.4-2.1-1.1-2.8c-0.9-0.9-2.3-1.4-3.9-1.4h-5.9v13.8h1.8v-5.2h3.6l3.9,5.2l0,0.1h2.2l-4.2-5.6
+                       C124.4,174.7,125.7,173.2,125.7,171.1"/>
+                   <path class="st0" d="M140.7,169.1l2.8,6.3h-5.7L140.7,169.1z M140,166.8l-6.2,13.7l-0.1,0.2h1.9l1.6-3.6h7.1l1.6,3.6h2l-6.3-13.9
+                       H140z"/>
+                   <polygon class="st0" points="153.1,166.9 153.1,168.6 157.6,168.6 157.6,180.7 159.4,180.7 159.4,168.6 164,168.6 164,166.9 	"/>
+                   <rect x="172.2" y="166.9" class="st0" width="1.8" height="13.8"/>
+                   <path class="st0" d="M189.9,179.3c-2.9,0-5.2-2.3-5.2-5.4v0c0-3.1,2.2-5.4,5.1-5.4c2.9,0,5.2,2.3,5.2,5.4v0
+                       C195,176.9,192.8,179.3,189.9,179.3 M189.9,166.7c-4,0-7,3.1-7,7.1v0c0,4,3,7.1,7,7.1c4,0,7-3.1,7-7.1v0
+                       C196.9,169.8,193.9,166.7,189.9,166.7"/>
+                   <polygon class="st0" points="215.6,166.9 215.6,177.5 207.4,167 207.3,166.9 205.7,166.9 205.7,180.7 207.5,180.7 207.5,170 
+                       215.9,180.7 215.9,180.7 217.4,180.7 217.4,166.9 	"/>
+                   <path class="st1" d="M177.5,48.8L131.1,2.4c0,0-3.1-3.1-6.2,0L78.5,48.8c0,0-3.1,3.1,0,6.2l33.8,33.8c0.3-0.1,0.5-0.3,0.7-0.4
+                       c6.1-3.8,7.1-22.2,7.1-30.9h-4.8c-0.3-1-0.5-2.1-0.5-3.3c0-1.2,0.2-2.3,0.5-3.3h4.7c-1.2-9.1-5-13.7-5.6-14.5
+                       c-0.8-1-1.2-1.5-0.4-2.6c0.8-1,2.1-2.9,9.7-3.4c0.6,0,1.1-0.5,1.1-1.2v-2.5c0-0.2-0.1-0.3-0.3-0.3h-5.1c-0.2,0-0.4-0.2-0.4-0.4
+                       v-5.5c0-0.2,0.2-0.4,0.4-0.4h5.1c0.2,0,0.3-0.1,0.3-0.3V15c0-0.3,0.3-0.6,0.6-0.6h2.6h2.6c0.3,0,0.6,0.3,0.6,0.6v4.8
+                       c0,0.2,0.1,0.3,0.3,0.3h5.1c0.2,0,0.4,0.2,0.4,0.4V26c0,0.2-0.2,0.4-0.4,0.4h-5.1c-0.2,0-0.3,0.1-0.3,0.3v2.5
+                       c0,0.6,0.5,1.1,1.1,1.2c7.5,0.5,8.8,2.4,9.7,3.4c0.9,1.1,0.4,1.6-0.4,2.6c-0.6,0.8-4.4,5.5-5.6,14.5h4.7c0.3,1,0.5,2.1,0.5,3.3
+                       c0,1.2-0.2,2.3-0.5,3.3h-4.8c0,8.7,1,27.1,7.1,30.9c0.2,0.1,0.5,0.3,0.7,0.4L177.5,55C177.5,55,180.6,51.9,177.5,48.8"/>
+                   <path class="st2" d="M124.8,19.7V15c0-0.3,0.3-0.6,0.6-0.6h2.6h2.6c0.3,0,0.6,0.3,0.6,0.6v4.8c0,0.2,0.1,0.3,0.3,0.3h0.9l5.1-5.1
+                       L128,5.5l-9.4,9.4l5.1,5.1h0.8C124.7,20,124.8,19.9,124.8,19.7"/>
+                   <path class="st2" d="M124.8,29.2v-1.7l-3,3c0.6-0.1,1.2-0.1,1.9-0.2C124.3,30.3,124.8,29.8,124.8,29.2"/>
+                   <path class="st2" d="M132.2,30.4c0.7,0.1,1.4,0.1,2,0.2l-3.1-3.1v1.7C131.1,29.8,131.6,30.3,132.2,30.4"/>
+                   <path class="st2" d="M136.7,72l0.7-0.7l-0.9-0.9C136.6,71,136.7,71.5,136.7,72"/>
+                   <path class="st2" d="M118.6,71.3l0.6,0.6c0.1-0.5,0.1-0.9,0.2-1.4L118.6,71.3z"/>
+                   <path class="st2" d="M141.9,33.8c0.9,1.1,0.4,1.6-0.4,2.6c-0.1,0.2-0.3,0.4-0.6,0.9l5.9,5.9l9.4-9.4l-9.4-9.4l-7.5,7.5
+                       C140.9,32.5,141.5,33.2,141.9,33.8"/>
+                   <path class="st2" d="M139,50.9h1.6c0.3,1,0.5,2.1,0.5,3.3c0,0.7-0.1,1.3-0.2,1.9l5.8,5.8l9.4-9.4l-9.4-9.4L139,50.9z"/>
+                   
+                       <rect x="140.1" y="64.7" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 301.0263 17.9543)" class="st2" width="13.3" height="13.3"/>
+                   <path class="st2" d="M114.4,36.4c-0.8-1-1.2-1.5-0.4-2.6c0.4-0.5,1-1.3,2.6-2l-7.4-7.4l-9.4,9.4l9.4,9.4l5.9-5.9
+                       C114.8,36.8,114.5,36.5,114.4,36.4"/>
+                   <path class="st2" d="M114.8,54.2c0-1.2,0.2-2.3,0.5-3.3h1.7l-7.8-7.8l-9.4,9.4l9.4,9.4l5.8-5.8C114.9,55.5,114.8,54.9,114.8,54.2"
+                       />
+                   
+                       <rect x="102.6" y="64.7" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 136.0019 198.9633)" class="st2" width="13.3" height="13.3"/>
+                   
+                       <rect x="83.8" y="45.9" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 117.2046 153.5888)" class="st2" width="13.3" height="13.3"/>
+                   
+                       <rect x="158.9" y="45.9" transform="matrix(0.7071 -0.7071 0.7071 0.7071 11.3572 132.4651)" class="st2" width="13.3" height="13.3"/>
+               </g>
+               </svg>
+                </span>
+              <span class="app-brand-text demo text-body fw-bold ms-1">US Chess </br>Fedderation</span>
+            </a>
+
+              <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-xl-none">
+                <i class="ti ti-x ti-sm align-middle"></i>
+              </a>
+            </div>
+
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <i class="ti ti-menu-2 ti-sm"></i>
+              </a>
+            </div>
+
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <div class="avatar avatar-online">
+                      <img src="../../assets/img/avatars/1.png" alt class="h-auto rounded-circle" />
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <img src="../../assets/img/avatars/1.png" alt class="h-auto rounded-circle" />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-medium d-block">John Doe</span>
+                            <small class="text-muted">Admin</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="ti ti-user-check me-2 ti-sm"></i>
+                        <span class="align-middle">My Profile</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="ti ti-settings me-2 ti-sm"></i>
+                        <span class="align-middle">Settings</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <span class="d-flex align-items-center align-middle">
+                          <i class="flex-shrink-0 ti ti-credit-card me-2 ti-sm"></i>
+                          <span class="flex-grow-1 align-middle">Billing</span>
+                          <span class="flex-shrink-0 badge badge-center rounded-pill bg-label-danger w-px-20 h-px-20"
+                            >2</span
+                          >
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="ti ti-logout me-2 ti-sm"></i>
+                        <span class="align-middle">Log Out</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ User -->
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- / Navbar -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Menu -->
+            <aside id="layout-menu" class="layout-menu-horizontal menu-horizontal menu bg-menu-theme flex-grow-0">
+              <div class="container-xxl d-flex h-100">
+                <ul class="menu-inner py-1">
+                  <!-- Page -->
+                  <li class="menu-item active">
+                    <a href="index.html" class="menu-link">
+                      <i class="menu-icon tf-icons ti ti-smart-home"></i>
+                      <div data-i18n="Page 1">Page 1</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="page-2.html" class="menu-link">
+                      <i class="menu-icon tf-icons ti ti-app-window"></i>
+                      <div data-i18n="Page 2">Page 2</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </aside>
+            <!-- / Menu -->
+
+            <!-- Content -->
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <h4 class="py-3 mb-4"><span class="text-muted fw-light">User / View /</span> Account</h4>
+              <div class="row">
+                <!-- User Sidebar -->
+                <div class="col-xl-4 col-lg-5 col-md-5 order-1 order-md-0">
+                  <!-- User Card -->
+                  <div class="card mb-4">
+                    <div class="card-body">
+                      <div class="user-avatar-section">
+                        <div class="d-flex align-items-center flex-column">
+                          <img
+                            class="img-fluid rounded mb-3 pt-1 mt-4"
+                            src="../../assets/img/avatars/single_player.jpg"
+                            height="100"
+                            width="100"
+                            alt="User avatar" />
+                          <div class="user-info text-center">
+                            <h4 class="mb-2">Single Player</h4>
+                            <span class="badge bg-label-secondary mt-1"> Premium Adult </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-around flex-wrap mt-3 pt-3 pb-4 border-bottom">
+                        <div class="d-flex align-items-start me-4 mt-3 gap-2">
+                          <span class="badge bg-label-primary p-2 rounded"><i class="ti ti-checkbox ti-sm"></i></span>
+                          <div>
+                            <p class="mb-0 fw-medium">31446091</p>
+                            <small>Membership ID</small>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-start mt-3 gap-2">
+                          <span class="badge bg-label-primary p-2 rounded"><i class="ti ti-briefcase ti-sm"></i></span>
+                          <div>
+                            <p class="mb-0 fw-medium">August 31, 2025</p>
+                            <small>Expires On</small>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="mt-4 small text-uppercase text-muted">Details</p>
+                      <div class="info-container">
+                        <ul class="list-unstyled">
+                          <li class="mb-2 pt-1">
+                            <span class="fw-medium me-1">Email:</span>
+                            <span>self_player@gmail.com</span>
+                          </li>
+                          <li class="mb-2 pt-1">
+                            <span class="fw-medium me-1">Status:</span>
+                            <span class="badge bg-label-success">Active</span>
+                          </li>
+                          <li class="mb-2 pt-1">
+                            <span class="fw-medium me-1">Member Type:</span>
+                            <span>Premium Adult</span>
+                          </li>
+                          <li class="mb-2 pt-1">
+                            <span class="fw-medium me-1">Date of Birth</span>
+                            <span>01/01/2000</span>
+                          </li>
+                          <li class="mb-2 pt-1">
+                            <span class="fw-medium me-1">Contact:</span>
+                            <span>(123) 456-7890</span>
+                          </li>
+                          <li class="mb-2 pt-1">
+                            <span class="fw-medium me-1">Address:</span>
+                            <span>123 main st</span>
+                          </li>
+                          <li class="mb-2 pt-1">
+                            <span class="fw-medium me-1">Address 2:</span>
+                            <span>Unit 9</span>
+                          </li>
+                          <li class="mb-2 pt-1">
+                            <span class="fw-medium me-1">City:</span>
+                            <span>Saint Louis</span>
+                          </li>
+                          <li class="mb-2 pt-1">
+                            <span class="fw-medium me-1">State:</span>
+                            <span>Missouri</span>
+                          </li>
+                          <li class="pt-1">
+                            <span class="fw-medium me-1">Country:</span>
+                            <span>United States</span>
+                          </li>
+                        </ul>
+                        <div class="d-flex justify-content-center">
+                          <a
+                            href="javascript:;"
+                            class="btn btn-primary me-3"
+                            data-bs-target="#editUser"
+                            data-bs-toggle="modal"
+                            >Edit</a
+                          >
+                          <a href="javascript:;" class="btn btn-label-danger suspend-user">Suspended</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /User Card -->
+                  <!-- Plan Card -->
+                  <div class="card mb-4">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between align-items-start">
+                        <span class="badge bg-label-primary">Premium</span>
+                        <div class="d-flex justify-content-center">
+                          <sup class="h6 pricing-currency mt-3 mb-0 me-1 text-primary fw-normal">$</sup>
+                          <h1 class="mb-0 text-primary">87</h1>
+                          <sub class="h6 pricing-duration mt-auto mb-2 text-muted fw-normal">/year</sub>
+                        </div>
+                      </div>
+                      <ul class="ps-3 g-2 my-3">
+                        <li class="mb-2">1 Member</li>
+                        <li class="mb-2">Only 1 user Membership</li>
+                        <li>12 Print Issues | Chess Life</li>
+                      </ul>
+                      <div class="d-flex justify-content-between align-items-center mb-1 fw-medium text-heading">
+                        <span>Days</span>
+                        <span>65% Completed</span>
+                      </div>
+                      <div class="progress mb-1" style="height: 8px">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          style="width: 65%"
+                          aria-valuenow="65"
+                          aria-valuemin="0"
+                          aria-valuemax="100"></div>
+                      </div>
+                      <span>4 days remaining</span>
+                      <div class="d-grid w-100 mt-4">
+                        <button class="btn btn-primary" data-bs-target="#upgradePlanModal" data-bs-toggle="modal">
+                          Upgrade/Renew Membership
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Plan Card -->
+                </div>
+                <!--/ User Sidebar -->
+
+                <!-- User Content -->
+                <div class="col-xl-8 col-lg-7 col-md-7 order-0 order-md-1">
+                  <!-- User Pills -->
+                  <ul class="nav nav-pills flex-column flex-md-row mb-4">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="javascript:void(0);"
+                        ><i class="ti ti-user-check ti-xs me-1"></i>Account</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../horizontal-menu-template-no-customizer/app-user-view-security-revised.html"
+                        ><i class="ti ti-lock ti-xs me-1"></i>Security</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../horizontal-menu-template-no-customizer/app-user-view-billing-revised.html"
+                        ><i class="ti ti-currency-dollar ti-xs me-1"></i>Billing & Plans</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../horizontal-menu-template-no-customizer/app-user-view-notifications-revised.html"
+                        ><i class="ti ti-bell ti-xs me-1"></i>Notifications</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../horizontal-menu-template-no-customizer/app-user-view-connections-revised.html"
+                        ><i class="ti ti-link ti-xs me-1"></i>Connections</a
+                      >
+                    </li>
+                  </ul>
+                  <!--/ User Pills -->
+
+                  <!-- Project table -->
+                  <div class="card mb-4">
+                    <h5 class="card-header">Authorized Affiliates</h5>
+                    <div class="d-flex justify-content-center">
+                        <div class="col-4">
+                        <button class="btn btn-primary" data-bs-target="#affiliateModal" data-bs-toggle="modal">
+                          Become an Affiliate / Renew
+                        </button>
+                        </div>
+                    </div>    
+                    <div class="table-responsive mb-3">
+                      <table class="table datatable-project border-top">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>Affiliate</th>
+                            <th class="text-nowrap">Contant Email</th>
+                            <th>Contact Phone</th>
+                            <th>Contact Address</th>
+                          </tr>
+                        </thead>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- /Project table -->
+
+
+                  <!-- Invoice table -->
+                  <div class="card mb-4">
+                    <h5 class="card-header">Safe Play Training Status</h5>
+                    <div class="table-responsive mb-3">
+                      <table class="table datatable-invoice border-top">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>Activity</th>
+                            <th><i class="ti ti-trending-up text-secondary"></i></th>
+                            <th>Activity Status</th>
+                            <th> Date</th>
+                          </tr>
+                        </thead>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- /Invoice table -->
+                </div>
+                <!--/ User Content -->
+              </div>
+
+              <!-- Modal -->
+              <!-- Edit User Modal -->
+              <div class="modal fade" id="editUser" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-simple modal-edit-user">
+                  <div class="modal-content p-3 p-md-5">
+                    <div class="modal-body">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <div class="text-center mb-4">
+                        <h3 class="mb-2">Edit User Information</h3>
+                        <p class="text-muted">Updating user details will receive a privacy audit.</p>
+                      </div>
+                      <form id="editUserForm" class="row g-3" onsubmit="return false">
+                        <div class="col-12 col-md-6">
+                          <label class="form-label" for="modalEditUserFirstName">First Name</label>
+                          <input
+                            type="text"
+                            id="modalEditUserFirstName"
+                            name="modalEditUserFirstName"
+                            class="form-control"
+                            placeholder="John" />
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label class="form-label" for="modalEditUserLastName">Last Name</label>
+                          <input
+                            type="text"
+                            id="modalEditUserLastName"
+                            name="modalEditUserLastName"
+                            class="form-control"
+                            placeholder="Doe" />
+                        </div>
+                        <div class="col-12">
+                          <label class="form-label" for="modalEditUserName">Username</label>
+                          <input
+                            type="text"
+                            id="modalEditUserName"
+                            name="modalEditUserName"
+                            class="form-control"
+                            placeholder="john.doe.007" />
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label class="form-label" for="modalEditUserEmail">Email</label>
+                          <input
+                            type="text"
+                            id="modalEditUserEmail"
+                            name="modalEditUserEmail"
+                            class="form-control"
+                            placeholder="example@domain.com" />
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label class="form-label" for="modalEditUserStatus">Status</label>
+                          <select
+                            id="modalEditUserStatus"
+                            name="modalEditUserStatus"
+                            class="select2 form-select"
+                            aria-label="Default select example">
+                            <option selected>Status</option>
+                            <option value="1">Active</option>
+                            <option value="2">Inactive</option>
+                            <option value="3">Suspended</option>
+                          </select>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label class="form-label" for="modalEditTaxID">Tax ID</label>
+                          <input
+                            type="text"
+                            id="modalEditTaxID"
+                            name="modalEditTaxID"
+                            class="form-control modal-edit-tax-id"
+                            placeholder="123 456 7890" />
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label class="form-label" for="modalEditUserPhone">Phone Number</label>
+                          <div class="input-group">
+                            <span class="input-group-text">US (+1)</span>
+                            <input
+                              type="text"
+                              id="modalEditUserPhone"
+                              name="modalEditUserPhone"
+                              class="form-control phone-number-mask"
+                              placeholder="202 555 0111" />
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label class="form-label" for="modalEditUserLanguage">Language</label>
+                          <select
+                            id="modalEditUserLanguage"
+                            name="modalEditUserLanguage"
+                            class="select2 form-select"
+                            multiple>
+                            <option value="">Select</option>
+                            <option value="english" selected>English</option>
+                            <option value="spanish">Spanish</option>
+                            <option value="french">French</option>
+                            <option value="german">German</option>
+                            <option value="dutch">Dutch</option>
+                            <option value="hebrew">Hebrew</option>
+                            <option value="sanskrit">Sanskrit</option>
+                            <option value="hindi">Hindi</option>
+                          </select>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <label class="form-label" for="modalEditUserCountry">Country</label>
+                          <select
+                            id="modalEditUserCountry"
+                            name="modalEditUserCountry"
+                            class="select2 form-select"
+                            data-allow-clear="true">
+                            <option value="">Select</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Belarus">Belarus</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="Canada">Canada</option>
+                            <option value="China">China</option>
+                            <option value="France">France</option>
+                            <option value="Germany">Germany</option>
+                            <option value="India">India</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="Israel">Israel</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Korea">Korea, Republic of</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Philippines">Philippines</option>
+                            <option value="Russia">Russian Federation</option>
+                            <option value="South Africa">South Africa</option>
+                            <option value="Thailand">Thailand</option>
+                            <option value="Turkey">Turkey</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="United Arab Emirates">United Arab Emirates</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="United States">United States</option>
+                          </select>
+                        </div>
+                        <div class="col-12">
+                          <label class="switch">
+                            <input type="checkbox" class="switch-input" />
+                            <span class="switch-toggle-slider">
+                              <span class="switch-on"></span>
+                              <span class="switch-off"></span>
+                            </span>
+                            <span class="switch-label">Use as a billing address?</span>
+                          </label>
+                        </div>
+                        <div class="col-12 text-center">
+                          <button type="submit" class="btn btn-primary me-sm-3 me-1">Submit</button>
+                          <button
+                            type="reset"
+                            class="btn btn-label-secondary"
+                            data-bs-dismiss="modal"
+                            aria-label="Close">
+                            Cancel
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/ Edit User Modal -->
+
+              <!-- Add New Credit Card Modal -->
+              <div class="modal fade" id="upgradePlanModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-simple modal-upgrade-plan">
+                  <div class="modal-content p-3 p-md-5">
+                    <div class="modal-body">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <div class="text-center mb-4">
+                        <h3 class="mb-2">Upgrade Plan</h3>
+                        <p>Choose the best plan for user.</p>
+                      </div>
+                      <form id="upgradePlanForm" class="row g-3" onsubmit="return false">
+                        <div class="col-sm-8">
+                          <label class="form-label" for="choosePlan">Choose Plan</label>
+                          <select id="choosePlan" name="choosePlan" class="form-select" aria-label="Choose Plan">
+                            <option selected>Choose Plan</option>
+                            <option value="standard">Standard - $99/month</option>
+                            <option value="exclusive">Exclusive - $249/month</option>
+                            <option value="Enterprise">Enterprise - $499/month</option>
+                          </select>
+                        </div>
+                        <div class="col-sm-4 d-flex align-items-end">
+                          <button type="submit" class="btn btn-primary">Upgrade</button>
+                        </div>
+                      </form>
+                    </div>
+                    <hr class="mx-md-n5 mx-n3" />
+                    <div class="modal-body">
+                      <p class="mb-0">User current plan is standard plan</p>
+                      <div class="d-flex justify-content-between align-items-center flex-wrap">
+                        <div class="d-flex justify-content-center me-2">
+                          <sup class="h6 pricing-currency pt-1 mt-3 mb-0 me-1 text-primary">$</sup>
+                          <h1 class="display-5 mb-0 text-primary">99</h1>
+                          <sub class="h5 pricing-duration mt-auto mb-2 text-muted">/month</sub>
+                        </div>
+                        <button class="btn btn-label-danger cancel-subscription mt-3">Cancel Subscription</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/ Add New Credit Card Modal -->
+              <!-- Affiliate Modal -->
+              <div class="modal fade" id="affiliateModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-simple modal-upgrade-plan">
+                  <div class="modal-content p-3 p-md-5">
+                    <hr class="mx-md-n5 mx-n3" />
+                    <div class="modal-body">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <div class="row">
+                        <div class="col-xl">
+                          <div class="card mb-4">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                              <h5 class="mb-0">Affiliate: New Membership</h5>
+                              <small class="text-muted float-end">Renewing an Existing Affiliate Membership?</small>
+                            </div>
+                            <div class="card-body">
+                              <form>
+                                <!-- Organization Information -->
+                                <div class="mb-3">
+                                  <label class="form-label" for="organization-name">Organization Name</label>
+                                  <input type="text" class="form-control" id="organization-name" placeholder="Enter Organization Name" />
+                                </div>
+                      
+                                <div class="mb-3">
+                                  <label class="form-label" for="organization-type">Type of Organization</label>
+                                  <select class="form-select" id="organization-type">
+                                    <option value="college">College</option>
+                                    <option value="school">School</option>
+                                    <option value="prison">Prison</option>
+                                    <option value="general">General / Other</option>
+                                  </select>
+                                </div>
+                      
+                                <!-- Membership Dropdown -->
+                                <div class="mb-3">
+                                  <label class="form-label" for="membership">Membership</label>
+                                  <select class="form-select" id="membership">
+                                    <option value="">- Select -</option>
+                                    <!-- Add relevant membership options here -->
+                                  </select>
+                                </div>
+                      
+                                <!-- Contact Information -->
+                                <h5 class="mb-3">Affiliate Contact Information</h5>
+                                <div class="row">
+                                  <div class="col-sm-6 mb-3">
+                                    <label class="form-label" for="street-address">Street Address</label>
+                                    <input type="text" class="form-control" id="street-address" placeholder="Enter Street Address" />
+                                  </div>
+                                  <div class="col-sm-6 mb-3">
+                                    <label class="form-label" for="street-address-2">Street Address 2</label>
+                                    <input type="text" class="form-control" id="street-address-2" placeholder="Apt, Suite, etc." />
+                                  </div>
+                                </div>
+                      
+                                <div class="row">
+                                  <div class="col-sm-4 mb-3">
+                                    <label class="form-label" for="city">City</label>
+                                    <input type="text" class="form-control" id="city" placeholder="Enter City" />
+                                  </div>
+                                  <div class="col-sm-4 mb-3">
+                                    <label class="form-label" for="state">State/Province</label>
+                                    <select class="form-select" id="state">
+                                      <option value="">Select State/Province</option>
+                                      <!-- Add options for states or provinces -->
+                                    </select>
+                                  </div>
+                                  <div class="col-sm-4 mb-3">
+                                    <label class="form-label" for="postal-code">Postal Code</label>
+                                    <input type="text" class="form-control" id="postal-code" placeholder="Enter Postal Code" />
+                                  </div>
+                                </div>
+                      
+                                <!-- Additional Contact Information -->
+                                <div class="mb-3">
+                                  <label class="form-label" for="email">Email</label>
+                                  <input type="email" class="form-control" id="email" placeholder="Enter Email Address" />
+                                </div>
+                      
+                                <div class="mb-3">
+                                  <label class="form-label" for="phone">Phone Number</label>
+                                  <input type="text" class="form-control" id="phone" placeholder="Enter Phone Number" />
+                                </div>
+                      
+                                <!-- Email Notifications -->
+                                <h5 class="mb-3">Email Notifications</h5>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="email-notifications-1" />
+                                  <label class="form-check-label" for="email-notifications-1">3rd Parties</label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="email-notifications-2" />
+                                  <label class="form-check-label" for="email-notifications-2">TLA Mail</label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="email-notifications-3" />
+                                  <label class="form-check-label" for="email-notifications-3">Newsletter and C/L Notify</label>
+                                </div>
+                      
+                                <!-- Submit Button -->
+                                <hr class="mx-md-n5 mx-n3" />
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/ Affiliate Modal-->
+              <!-- /Modal -->
+            </div>
+            <!--/ Content -->
+
+            <!-- Footer -->
+            <footer class="content-footer footer bg-footer-theme">
+              <div class="container-xxl">
+                
+                
+              </div>
+            </footer>
+            <!-- / Footer -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!--/ Content wrapper -->
+        </div>
+
+        <!--/ Layout container -->
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+
+    <!--/ Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+
+    <script src="../../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../../assets/vendor/js/bootstrap.js"></script>
+    <script src="../../assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="../../assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="../../assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="../../assets/vendor/libs/typeahead-js/typeahead.js"></script>
+    <script src="../../assets/vendor/js/menu.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="../../assets/vendor/libs/moment/moment.js"></script>
+    <script src="../../assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+    <script src="../../assets/vendor/libs/sweetalert2/sweetalert2.js"></script>
+    <script src="../../assets/vendor/libs/cleavejs/cleave.js"></script>
+    <script src="../../assets/vendor/libs/cleavejs/cleave-phone.js"></script>
+    <script src="../../assets/vendor/libs/select2/select2.js"></script>
+    <script src="../../assets/vendor/libs/@form-validation/popular.js"></script>
+    <script src="../../assets/vendor/libs/@form-validation/bootstrap5.js"></script>
+    <script src="../../assets/vendor/libs/@form-validation/auto-focus.js"></script>
+
+    <!-- Main JS -->
+    <script src="../../assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="../../assets/js/modal-edit-user.js"></script>
+    <script src="../../assets/js/app-user-view.js"></script>
+    <script src="../../assets/js/app-user-view-account.js"></script>
+  </body>
+</html>
